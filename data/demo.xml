@@ -1,0 +1,289 @@
+<odoo>
+
+    <!-- ================= PASSENGERS (11) ================= -->
+
+    <record id="passenger_1" model="uber.passenger">
+        <field name="name">Ahmed Qourani</field>
+        <field name="phone">01000000001</field>
+        <field name="email">p1@example.com</field>
+    </record>
+
+    <record id="passenger_2" model="uber.passenger">
+        <field name="name">Ahmed Hussein</field>
+        <field name="phone">01000000002</field>
+        <field name="email">p2@example.com</field>
+    </record>
+
+    <record id="passenger_3" model="uber.passenger">
+        <field name="name">Ahmed Gamal</field>
+        <field name="phone">01000000003</field>
+        <field name="email">p3@example.com</field>
+    </record>
+
+    <record id="passenger_4" model="uber.passenger">
+        <field name="name">Ammar Yasser</field>
+        <field name="phone">01000000004</field>
+        <field name="email">p4@example.com</field>
+    </record>
+
+    <record id="passenger_5" model="uber.passenger">
+        <field name="name">Mostafa Mohamed</field>
+        <field name="phone">01000000005</field>
+        <field name="email">p5@example.com</field>
+    </record>
+
+    <record id="passenger_6" model="uber.passenger">
+        <field name="name">Abdelhakem Mahmoud</field>
+        <field name="phone">01000000006</field>
+        <field name="email">p6@example.com</field>
+    </record>
+
+    <record id="passenger_7" model="uber.passenger">
+        <field name="name">Nada Samy</field>
+        <field name="phone">01000000007</field>
+        <field name="email">p7@example.com</field>
+    </record>
+
+    <record id="passenger_8" model="uber.passenger">
+        <field name="name">Salma Nabil</field>
+        <field name="phone">01000000008</field>
+        <field name="email">p8@example.com</field>
+    </record>
+
+    <record id="passenger_9" model="uber.passenger">
+        <field name="name">Youssef Tarek</field>
+        <field name="phone">01000000009</field>
+        <field name="email">p9@example.com</field>
+    </record>
+
+    <record id="passenger_10" model="uber.passenger">
+        <field name="name">Mona Adel</field>
+        <field name="phone">01000000010</field>
+        <field name="email">p10@example.com</field>
+    </record>
+
+    <record id="passenger_11" model="uber.passenger">
+        <field name="name">Ali Hassan</field>
+        <field name="phone">01000000011</field>
+        <field name="email">p11@example.com</field>
+    </record>
+
+
+    <!-- ================= DRIVERS (11) ================= -->
+
+    <record id="driver_1" model="uber.driver">
+        <field name="name">Mohamed Hassan</field>
+        <field name="phone">01100000001</field>
+        <field name="email">d1@example.com</field>
+        <field name="vehicle">Toyota</field>
+    </record>
+
+    <record id="driver_2" model="uber.driver">
+        <field name="name">Ali Ibrahim</field>
+        <field name="phone">01100000002</field>
+        <field name="email">d2@example.com</field>
+        <field name="vehicle">Hyundai</field>
+    </record>
+
+    <record id="driver_3" model="uber.driver">
+        <field name="name">Omar Khaled</field>
+        <field name="phone">01100000003</field>
+        <field name="email">d3@example.com</field>
+        <field name="vehicle">Nissan</field>
+    </record>
+
+    <record id="driver_4" model="uber.driver">
+        <field name="name">Khaled Mahmoud</field>
+        <field name="phone">01100000004</field>
+        <field name="email">d4@example.com</field>
+        <field name="vehicle">Kia</field>
+    </record>
+
+    <record id="driver_5" model="uber.driver">
+        <field name="name">Hassan Ali</field>
+        <field name="phone">01100000005</field>
+        <field name="email">d5@example.com</field>
+        <field name="vehicle">BMW</field>
+    </record>
+
+    <record id="driver_6" model="uber.driver">
+        <field name="name">Sara Mohamed</field>
+        <field name="phone">01100000006</field>
+        <field name="email">d6@example.com</field>
+        <field name="vehicle">Mercedes</field>
+    </record>
+
+    <record id="driver_7" model="uber.driver">
+        <field name="name">Youssef Tarek</field>
+        <field name="phone">01100000007</field>
+        <field name="email">d7@example.com</field>
+        <field name="vehicle">Fiat</field>
+    </record>
+
+    <record id="driver_8" model="uber.driver">
+        <field name="name">Salma Nabil</field>
+        <field name="phone">01100000008</field>
+        <field name="email">d8@example.com</field>
+        <field name="vehicle">Chevrolet</field>
+    </record>
+
+    <record id="driver_9" model="uber.driver">
+        <field name="name">Ahmed Ali</field>
+        <field name="phone">01100000009</field>
+        <field name="email">d9@example.com</field>
+        <field name="vehicle">Peugeot</field>
+    </record>
+
+    <record id="driver_10" model="uber.driver">
+        <field name="name">Mona Adel</field>
+        <field name="phone">01100000010</field>
+        <field name="email">d10@example.com</field>
+        <field name="vehicle">Skoda</field>
+    </record>
+
+    <record id="driver_11" model="uber.driver">
+        <field name="name">Abdelrahman Taha</field>
+        <field name="phone">01100000011</field>
+        <field name="email">d11@example.com</field>
+        <field name="vehicle">Opel</field>
+    </record>
+
+
+    <!-- ================= RIDES (11) ================= -->
+
+    <record id="ride_1" model="uber.ride">
+        <field name="passenger_id" ref="passenger_1"/>
+        <field name="driver_id" ref="driver_1"/>
+        <field name="pickup">Cairo</field>
+        <field name="destination">Giza</field>
+    </record>
+
+    <record id="ride_2" model="uber.ride">
+        <field name="passenger_id" ref="passenger_2"/>
+        <field name="driver_id" ref="driver_2"/>
+        <field name="pickup">Alexandria</field>
+        <field name="destination">Cairo</field>
+    </record>
+
+    <record id="ride_3" model="uber.ride">
+        <field name="passenger_id" ref="passenger_3"/>
+        <field name="driver_id" ref="driver_3"/>
+        <field name="pickup">Nasr City</field>
+        <field name="destination">Heliopolis</field>
+    </record>
+
+    <record id="ride_4" model="uber.ride">
+        <field name="passenger_id" ref="passenger_4"/>
+        <field name="driver_id" ref="driver_4"/>
+        <field name="pickup">Maadi</field>
+        <field name="destination">Dokki</field>
+    </record>
+
+    <record id="ride_5" model="uber.ride">
+        <field name="passenger_id" ref="passenger_5"/>
+        <field name="driver_id" ref="driver_5"/>
+        <field name="pickup">Zamalek</field>
+        <field name="destination">October</field>
+    </record>
+
+    <record id="ride_6" model="uber.ride">
+        <field name="passenger_id" ref="passenger_6"/>
+        <field name="driver_id" ref="driver_6"/>
+        <field name="pickup">Faisal</field>
+        <field name="destination">Haram</field>
+    </record>
+
+    <record id="ride_7" model="uber.ride">
+        <field name="passenger_id" ref="passenger_7"/>
+        <field name="driver_id" ref="driver_7"/>
+        <field name="pickup">Helwan</field>
+        <field name="destination">Maadi</field>
+    </record>
+
+    <record id="ride_8" model="uber.ride">
+        <field name="passenger_id" ref="passenger_8"/>
+        <field name="driver_id" ref="driver_8"/>
+        <field name="pickup">Shubra</field>
+        <field name="destination">Downtown</field>
+    </record>
+
+    <record id="ride_9" model="uber.ride">
+        <field name="passenger_id" ref="passenger_9"/>
+        <field name="driver_id" ref="driver_9"/>
+        <field name="pickup">Tanta</field>
+        <field name="destination">Mansoura</field>
+    </record>
+
+    <record id="ride_10" model="uber.ride">
+        <field name="passenger_id" ref="passenger_10"/>
+        <field name="driver_id" ref="driver_10"/>
+        <field name="pickup">Aswan</field>
+        <field name="destination">Luxor</field>
+    </record>
+
+    <record id="ride_11" model="uber.ride">
+        <field name="passenger_id" ref="passenger_11"/>
+        <field name="driver_id" ref="driver_11"/>
+        <field name="pickup">Suez</field>
+        <field name="destination">Ismailia</field>
+    </record>
+
+
+    <!-- ================= PAYMENTS (11) ================= -->
+
+    <record id="payment_1" model="uber.payment">
+        <field name="ride_id" ref="ride_1"/>
+        <field name="amount">100</field>
+    </record>
+
+    <record id="payment_2" model="uber.payment">
+        <field name="ride_id" ref="ride_2"/>
+        <field name="amount">150</field>
+    </record>
+
+    <record id="payment_3" model="uber.payment">
+        <field name="ride_id" ref="ride_3"/>
+        <field name="amount">120</field>
+    </record>
+
+    <record id="payment_4" model="uber.payment">
+        <field name="ride_id" ref="ride_4"/>
+        <field name="amount">180</field>
+    </record>
+
+    <record id="payment_5" model="uber.payment">
+        <field name="ride_id" ref="ride_5"/>
+        <field name="amount">200</field>
+    </record>
+
+    <record id="payment_6" model="uber.payment">
+        <field name="ride_id" ref="ride_6"/>
+        <field name="amount">90</field>
+    </record>
+
+    <record id="payment_7" model="uber.payment">
+        <field name="ride_id" ref="ride_7"/>
+        <field name="amount">110</field>
+    </record>
+
+    <record id="payment_8" model="uber.payment">
+        <field name="ride_id" ref="ride_8"/>
+        <field name="amount">130</field>
+    </record>
+
+    <record id="payment_9" model="uber.payment">
+        <field name="ride_id" ref="ride_9"/>
+        <field name="amount">170</field>
+    </record>
+
+    <record id="payment_10" model="uber.payment">
+        <field name="ride_id" ref="ride_10"/>
+        <field name="amount">220</field>
+    </record>
+
+    <record id="payment_11" model="uber.payment">
+        <field name="ride_id" ref="ride_11"/>
+        <field name="amount">250</field>
+    </record>
+
+</odoo>

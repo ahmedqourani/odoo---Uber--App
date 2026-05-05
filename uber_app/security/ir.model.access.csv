@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_passenger,access.passenger,model_uber_passenger,,1,1,1,1
+access_driver,access.driver,model_uber_driver,,1,1,1,1
+access_ride,access.ride,model_uber_ride,,1,1,1,1
+access_payment,access.payment,model_uber_payment,,1,1,1,1
